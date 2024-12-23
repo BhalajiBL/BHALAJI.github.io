@@ -4,31 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BHALAJI BL Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>BHALAJI BL</h1>
+        <p>AI Enthusiast | Process Mining Expert </p>
     </header>
-    <section id="about">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="about" class="container my-5">
         <h2>About Me</h2>
-        <p>Hello! I'm BHALAJI BL, a B.Tech student specializing in Artificial Intelligence.</p>
+        <p>I'm BHALAJI BL, a passionate student pursuing B.Tech in Artificial Intelligence at Hindustan Institute of Technology. I specialize in process optimization, blockchain integration, and predictive analysis.</p>
     </section>
-    <section id="projects">
+    <section id="projects" class="container my-5">
         <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> Process Mining Software</li>
-            <li><strong>Project 2:</strong> AI-Driven Process Optimization</li>
-        </ul>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Process Mining Software</h5>
+                        <p class="card-text">An end-to-end software for process optimization and deviation management.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">AI-Driven Cost Prediction</h5>
+                        <p class="card-text">A machine learning model for predicting costs and resource allocation.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="container my-5">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:bhalji0bl@gmail.com">bhalji0bl@gmail.com</a></p>
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="bhalaji0bl@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </section>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© BHALAJI BL 2024 | All Rights Reserved</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
